@@ -13,6 +13,11 @@
 		18A2865D242E0D2D00DD58A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A2865C242E0D2D00DD58A2 /* Assets.xcassets */; };
 		18A28660242E0D2D00DD58A2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A2865F242E0D2D00DD58A2 /* Preview Assets.xcassets */; };
 		18A28663242E0D2D00DD58A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A28661242E0D2D00DD58A2 /* LaunchScreen.storyboard */; };
+		18A2866B242E0EA700DD58A2 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18A2866A242E0EA700DD58A2 /* Pacifico-Regular.ttf */; };
+		18A2866F242E11C000DD58A2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A2866E242E11C000DD58A2 /* NetworkManager.swift */; };
+		18A28671242E12E700DD58A2 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A28670242E12E700DD58A2 /* PostData.swift */; };
+		18A28674242E1CDC00DD58A2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A28673242E1CDC00DD58A2 /* DetailView.swift */; };
+		18A28676242E22B800DD58A2 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A28675242E22B800DD58A2 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,12 @@
 		18A2865F242E0D2D00DD58A2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		18A28662242E0D2D00DD58A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A28664242E0D2D00DD58A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A2866A242E0EA700DD58A2 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		18A2866E242E11C000DD58A2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		18A28670242E12E700DD58A2 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		18A28673242E1CDC00DD58A2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		18A28675242E22B800DD58A2 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		18D396DA242E257A00609C2F /* H4X0R News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "H4X0R News.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +67,12 @@
 		18A28655242E0D2B00DD58A2 /* H4X0R News */ = {
 			isa = PBXGroup;
 			children = (
+				18D396DA242E257A00609C2F /* H4X0R News.entitlements */,
 				18A28656242E0D2B00DD58A2 /* AppDelegate.swift */,
 				18A28658242E0D2B00DD58A2 /* SceneDelegate.swift */,
-				18A2865A242E0D2B00DD58A2 /* ContentView.swift */,
+				18A28672242E1CA400DD58A2 /* Views */,
+				18A2866D242E119400DD58A2 /* Model */,
+				18A2866C242E0EAC00DD58A2 /* Fonts */,
 				18A2865C242E0D2D00DD58A2 /* Assets.xcassets */,
 				18A28661242E0D2D00DD58A2 /* LaunchScreen.storyboard */,
 				18A28664242E0D2D00DD58A2 /* Info.plist */,
@@ -73,6 +87,33 @@
 				18A2865F242E0D2D00DD58A2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18A2866C242E0EAC00DD58A2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				18A2866A242E0EA700DD58A2 /* Pacifico-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		18A2866D242E119400DD58A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18A2866E242E11C000DD58A2 /* NetworkManager.swift */,
+				18A28670242E12E700DD58A2 /* PostData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18A28672242E1CA400DD58A2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18A2865A242E0D2B00DD58A2 /* ContentView.swift */,
+				18A28673242E1CDC00DD58A2 /* DetailView.swift */,
+				18A28675242E22B800DD58A2 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A28663242E0D2D00DD58A2 /* LaunchScreen.storyboard in Resources */,
+				18A2866B242E0EA700DD58A2 /* Pacifico-Regular.ttf in Resources */,
 				18A28660242E0D2D00DD58A2 /* Preview Assets.xcassets in Resources */,
 				18A2865D242E0D2D00DD58A2 /* Assets.xcassets in Resources */,
 			);
@@ -146,9 +188,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A28671242E12E700DD58A2 /* PostData.swift in Sources */,
+				18A28674242E1CDC00DD58A2 /* DetailView.swift in Sources */,
+				18A2866F242E11C000DD58A2 /* NetworkManager.swift in Sources */,
 				18A28657242E0D2B00DD58A2 /* AppDelegate.swift in Sources */,
 				18A28659242E0D2B00DD58A2 /* SceneDelegate.swift in Sources */,
 				18A2865B242E0D2B00DD58A2 /* ContentView.swift in Sources */,
+				18A28676242E22B800DD58A2 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +330,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "H4X0R News/H4X0R News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R News/Preview Content\"";
 				DEVELOPMENT_TEAM = H87B3E4KY3;
 				ENABLE_PREVIEWS = YES;
@@ -295,6 +343,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rajatjain.H4X0R-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,7 +353,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "H4X0R News/H4X0R News.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"H4X0R News/Preview Content\"";
 				DEVELOPMENT_TEAM = H87B3E4KY3;
 				ENABLE_PREVIEWS = YES;
@@ -315,6 +366,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "rajatjain.H4X0R-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
